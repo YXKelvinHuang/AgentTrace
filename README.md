@@ -1,6 +1,11 @@
-# A-LOG (Agent Logger)
+# AgentTrace
 
-A-LOG is a runtime instrumentation and observability system for AI agents. It captures structured logs about operational actions, cognitive reasoning, and contextual interactions.
+AgentTrace is a runtime instrumentation and observability system for AI agents. It captures structured logs about operational actions, cognitive reasoning, and contextual interactions.
+
+## 📄 Paper
+
+**AgentTrace: Observability and Reasoning Tracing for AI Agents**  
+[Download the full paper (PDF)](paper/AgentTrace.pdf)
 
 ## Purpose
 
@@ -18,7 +23,7 @@ init(output_dir="logs", level="INFO")
 agent = instrument_agent(my_agent, name="MyAgent")
 ```
 
-A-LOG wraps public callable methods to:
+AgentTrace wraps public callable methods to:
 - Log start/complete/error with duration
 - Capture outputs (summaries)
 - Extract reasoning traces between `===REASONING_TRACE_START===` and `===REASONING_TRACE_END===`
