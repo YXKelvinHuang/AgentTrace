@@ -1,0 +1,30 @@
+# Base (keep optional libs commented if unused)
+jsonschema
+datasets
+loguru
+pandas
+numpy
+matplotlib
+
+# OpenTelemetry Core (optional runtime tracing)
+opentelemetry-api
+opentelemetry-sdk
+
+# OTLP Exporters
+opentelemetry-exporter-otlp
+opentelemetry-exporter-otlp-proto-http
+
+# OpenTelemetry Auto-Instrumentation
+# These automatically capture contextual logs from common libraries
+opentelemetry-instrumentation
+opentelemetry-instrumentation-requests      # HTTP calls via requests
+opentelemetry-instrumentation-urllib3       # HTTP calls via urllib3
+opentelemetry-instrumentation-httpx         # HTTP calls via httpx
+opentelemetry-instrumentation-sqlalchemy    # SQL database queries
+opentelemetry-instrumentation-redis         # Redis operations
+opentelemetry-instrumentation-pymongo       # MongoDB operations
+
+# Frameworks (optional)
+# logbench
+# langchain
+# autogen

@@ -1,0 +1,1 @@
+"""Auto-Instrumentation Demo Agent"""
